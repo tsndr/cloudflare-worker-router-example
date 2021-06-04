@@ -1,0 +1,10 @@
+name = "cloudflare-worker-router-example"
+type = "webpack"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+vars = { JWT_SECRET = "secret" }
+kv_namespaces = [
+    { binding = "USER", id = "", preview_id = "" }
+]
