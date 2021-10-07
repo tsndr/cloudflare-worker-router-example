@@ -160,7 +160,7 @@ module.exports = new class {
         }
         
         // Check if E-Mail address is already taken
-        if (req.body.email && req.body.email != req.auth.user.email) {
+        if (req.body.email && req.body.email != req.auth.email) {
             if (await USER.get(req.body.email) !== null) {
                 res.status = 400
                 res.body = {
