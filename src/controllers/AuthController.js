@@ -1,6 +1,6 @@
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
-const jwt = require('../libs/jwt')
+const jwt = require('@tsndr/cloudflare-worker-jwt')
 
 module.exports = new class {
     async register(req, res) {
