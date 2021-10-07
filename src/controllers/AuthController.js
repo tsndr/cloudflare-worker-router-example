@@ -138,7 +138,7 @@ module.exports = new class {
                 salutation: req.auth.user.salutation,
                 first_name: req.auth.user.first_name,
                 last_name: req.auth.user.last_name,
-                email: req.auth.user.email
+                email: req.auth.email
             }
         }
     }
